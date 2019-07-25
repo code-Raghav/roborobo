@@ -1,0 +1,143 @@
+*{
+    transition: ease-in 0.2s
+}
+::-webkit-scrollbar{
+    width: 0
+}
+@font-face{
+    font-family: Raleway;
+    src: url("../fonts/Raleway-Black.ttf")
+}
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    overflow-x: inherit
+}
+
+body{
+    margin: 0;
+    padding: 0
+}
+
+header{
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    z-index: 4;
+}
+
+nav{
+    width: 50vw;
+    height: inherit;
+    padding: 0 25vw 0 25vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-family: Raleway;
+    padding-top: 30px;
+}
+
+nav > a:hover{
+    color: #1e90ff;
+}
+
+nav > a:hover::after{
+    content: "________";
+    display: block;
+    line-height: 0.5
+}
+
+#section1{
+    width: 100vw;
+    height: 100vh
+}
+
+.video_overlay{
+    width: inherit;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.151);
+    position: absolute;
+    z-index: 2;
+}
+
+.video_container{
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+video{
+    position: absolute;
+    max-width: 100%;
+}
+
+.section1_content{
+    width: inherit;
+    height: 20vh;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    padding: 40vh 0 40vh 0
+
+}
+
+.section1_content > h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+
+}
+
+#section2{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.section2_content{
+    background-color: black;
+    border-bottom: 2.5px solid white;
+    border-right: 2.5px solid white;
+    border-top: 5px solid white;
+}
+
+.section2_content > h1{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5vh 0 10vh 0;
+}
+
+.section2_content > p{
+    color: white;
+    padding: 0 5vw 0 5vw;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.section2_image{
+    background-image: url("../images/img1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    border-bottom: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-top: 5px solid white
+}
+
+#section3{
+    width: 100vw;
+    height: 100vh
+}
+
+#section4{
+    width: 100vw;
+    height: 100vh
+}
